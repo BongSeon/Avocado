@@ -17,10 +17,43 @@
     hr {
       display: none;
     }
+
+    /* reusables */
+
+    /* header */
+    .header {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    header h1 {
+      margin: 0;
+      padding: 0;
+    }
+    .header a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+      margin: 10px;
+    }
+    .header a:hover {
+      color: white;
+    }
+    .header nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .header nav ul a {
+      margin-left: 50px;
+    }
   </style>
 </head>
 <body>
-  <header>
+  <header class="header">
     <img src="/assets/img/avocado.png" alt="Avocado">
     <nav>
       <ul>
