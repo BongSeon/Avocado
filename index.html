@@ -19,24 +19,38 @@
     }
 
     /* reusables */
+    .constrain {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 5px 20px;
+    }
 
     /* header */
     .header {
       background-color: #333;
+    }
+    .header .constrain
+    {
       display: flex;
       justify-content: space-between;
-      padding: 10px 20px;
+      align-items: center;
     }
-    header h1 {
+    .header h1 {
       margin: 0;
       padding: 0;
+      height: 30px;
+    }
+    .header h1 span {
+      display: none;
+    }
+    .header h1 img {
+      width: 30px;
     }
     .header a {
       color: #ccc;
       text-decoration: none;
       font-size: 14px;
       transition: color 0.3s;
-      margin: 10px;
     }
     .header a:hover {
       color: white;
@@ -50,35 +64,52 @@
     .header nav ul a {
       margin-left: 50px;
     }
+
+    /* product */
+    .product {
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
   <header class="header">
-    <img src="/assets/img/avocado.png" alt="Avocado">
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-      </ul>
-    </nav>
+    <div class="constrain">
+      <h1>
+        <a href="/">
+          <span>Orange</span>
+          <img src="/assets/img/avocado.png" alt="Avocado">
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <hr>
 
-  <section>
-    <article>
-      <h1>new aMac</h1>
-      <h2>이제 새롭게 만날 시간.</h2>
-      <h3>From ₩1,290,000</h3>
-      <p>이제 새로운 aMac을 만날 시간. Apple 최고의 기술과 디자인이 응집되어, M1 칩으로 완전히 새롭게 탄생했습니다. 어느 공간에서나 돋보이고, 어떤 삶의 방식과도 완벽히 어우러지죠.</p>
-    
-      <nav>
-        <ul>
-          <li><a href="#">Buy</a></li>
-          <li><a href="#">Learn More &gt;</a></li>
-        </ul>
-      </nav>
-      <img src="/assets/img/amac.jpeg" alt="aMac" width="400">
+  <section class="constrain">
+    <article class="product">
+      <div class="product-text">
+        <h1>new aMac</h1>
+        <h2>이제 새롭게 만날 시간.</h2>
+        <h3>From ₩1,290,000</h3>
+        <p>이제 새로운 aMac을 만날 시간. Apple 최고의 기술과 디자인이 응집되어, M1 칩으로 완전히 새롭게 탄생했습니다. 어느 공간에서나 돋보이고, 어떤 삶의 방식과도 완벽히 어우러지죠.</p>
+      
+        <nav>
+          <ul>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Learn More &gt;</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="product-image">
+        <img src="/assets/img/amac.jpeg" alt="aMac" width="400">
+      </div>
     </article>
   </section>
 
