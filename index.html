@@ -24,6 +24,27 @@
       margin: 0 auto;
       padding: 5px 20px;
     }
+    .button {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    .button-orange {
+      background-color: #ef6900;
+      color: white;
+    }
+    .button-orange:hover {
+      background-color: #eea975;
+    }
+    .button-white {
+      background-color: white;
+      color: #ef6900;
+    }
+    .button-white:hover {
+      background-color: #ddd;
+    }
 
     /* header */
     .header {
@@ -75,6 +96,31 @@
     .product-text, .product-image {
       flex: 50% 0 0;
     }
+    .product-text h1 {
+      font-size: 48px;
+      margin-bottom: 25px;
+    }
+    .product-text h2 {
+      font-size: 21px;
+    }
+    .product-text p {
+      font-size: 21px;
+      line-height: 1.4;
+    }
+    .product-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .product-nav ul a {
+      margin-left: 20px;
+    }
+    .product-image img {
+      width: 80%;
+      height: 90%;
+      padding: 10% 10% 0 10%;
+    }
   </style>
 </head>
 <body>
@@ -100,15 +146,13 @@
   <section class="constrain">
     <article class="product">
       <div class="product-text">
-        <h1>new aMac</h1>
-        <h2>이제 새롭게 만날 시간.</h2>
-        <h3>From ₩1,290,000</h3>
-        <p>이제 새로운 aMac을 만날 시간. Apple 최고의 기술과 디자인이 응집되어, M1 칩으로 완전히 새롭게 탄생했습니다. 어느 공간에서나 돋보이고, 어떤 삶의 방식과도 완벽히 어우러지죠.</p>
-      
-        <nav>
+        <h1>new aMac Amazing</h1>
+        <h2>From ₩1,290,000</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam similique sequi consequatur praesentium reiciendis atque.</p>
+        <nav class="product-nav">
           <ul>
-            <li><a href="#">Buy</a></li>
-            <li><a href="#">Learn More &gt;</a></li>
+            <li><a href="#" class="button button-orange">Buy</a></li>
+            <li><a href="#" class="button button-white">Learn More &gt;</a></li>
           </ul>
         </nav>
       </div>
