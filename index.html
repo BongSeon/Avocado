@@ -93,6 +93,15 @@
       border-bottom: 1px solid #ccc;
       padding: 100px 0;
     }
+    .product:first-child {
+      padding-top: 20px;
+    }
+    .product:last-child {
+      border-bottom: none;
+    }
+    .product-reverse {
+      flex-direction: row-reverse;
+    }
     .product-text, .product-image {
       flex: 50% 0 0;
     }
@@ -106,6 +115,7 @@
     .product-text p {
       font-size: 21px;
       line-height: 1.4;
+      margin-bottom: 30px;
     }
     .product-nav ul {
       list-style: none;
@@ -114,7 +124,7 @@
       display: flex;
     }
     .product-nav ul a {
-      margin-left: 20px;
+      margin-right: 10px;
     }
     .product-image img {
       width: 80%;
@@ -146,7 +156,7 @@
   <section class="constrain">
     <article class="product">
       <div class="product-text">
-        <h1>new aMac Amazing</h1>
+        <h1>The New aMac Amazing</h1>
         <h2>From ₩1,290,000</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam similique sequi consequatur praesentium reiciendis atque.</p>
         <nav class="product-nav">
@@ -158,6 +168,48 @@
       </div>
       <div class="product-image">
         <img src="/assets/img/amac.jpeg" alt="aMac" width="400">
+      </div>
+    </article>
+  </section>
+
+  <hr>
+
+  <section class="constrain">
+    <article class="product product-reverse">
+      <div class="product-text">
+        <h1>The New aBook Incredible</h1>
+        <h2>From ₩1,090,000</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam similique sequi consequatur praesentium reiciendis atque.</p>
+        <nav class="product-nav">
+          <ul>
+            <li><a href="#" class="button button-orange">Buy</a></li>
+            <li><a href="#" class="button button-white">Learn More &gt;</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="product-image">
+        <img src="/assets/img/amacbook.jpeg" alt="aMac" width="400">
+      </div>
+    </article>
+  </section>
+
+  <hr>
+
+  <section class="constrain">
+    <article class="product">
+      <div class="product-text">
+        <h1>The New aPad Pro What a Beautiful</h1>
+        <h2>From ₩1,290,000</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam similique sequi consequatur praesentium reiciendis atque.</p>
+        <nav class="product-nav">
+          <ul>
+            <li><a href="#" class="button button-orange">Buy</a></li>
+            <li><a href="#" class="button button-white">Learn More &gt;</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="product-image">
+        <img src="/assets/img/apadpro.jpeg" alt="aMac" width="400">
       </div>
     </article>
   </section>
