@@ -1,0 +1,140 @@
+/* base styles */
+body {
+  color: #333;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+hr {
+  display: none;
+}
+
+/* reusables */
+.constrain {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.button-orange {
+  background-color: #ef6900;
+  color: white;
+}
+.button-orange:hover {
+  background-color: #eea975;
+}
+.button-white {
+  background-color: white;
+  color: #ef6900;
+}
+.button-white:hover {
+  background-color: #ddd;
+}
+
+/* header */
+.header {
+  background-color: #333;
+}
+.header .constrain
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+.header h1 span {
+  display: none;
+}
+.header h1 img {
+  width: 30px;
+}
+.header a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.header a:hover {
+  color: white;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul a {
+  margin-left: 50px;
+}
+
+/* product */
+.product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 100px 0;
+}
+.product:first-child {
+  padding-top: 20px;
+}
+.product:last-child {
+  border-bottom: none;
+}
+.product-reverse {
+  flex-direction: row-reverse;
+}
+.product-text, .product-image {
+  flex: 50% 0 0;
+}
+.product-text h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+.product-text h2 {
+  font-size: 21px;
+}
+.product-text p {
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.product-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.product-nav ul a {
+  margin-right: 10px;
+}
+.product-image img {
+  width: 80%;
+  height: 90%;
+  padding: 10% 10% 0 10%;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .product {
+    display: block;
+    padding-top: 40px;
+  }
+  .product-text h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+}
