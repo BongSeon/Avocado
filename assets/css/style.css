@@ -138,3 +138,23 @@ hr {
     font-size: 35px;
   }
 }
+
+/* cookies-banner */
+.cookies-banner {
+  background-color: #333;
+  color: #ddd;
+  padding: 30px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.cookies-banner .constrain {
+  display: flex;
+  justify-content: space-between;
+}
+.cookies-banner h1 {
+  margin-top: 0;
+}
+.cookies-banner p {
+  margin-bottom: 0;
+}
