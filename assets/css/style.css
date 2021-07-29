@@ -147,6 +147,12 @@ hr {
   position: fixed;
   bottom: 0;
   width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+}
+.cookies-banner.show {
+  transform: translateY(0%);
 }
 .cookies-banner .constrain {
   display: flex;

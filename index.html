@@ -106,8 +106,25 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      conso
+      let cookiesBanner = document.querySelector('.cookies-banner')
+      let cookiesBannerCloseButton = document.querySelector('.cookies-banner-button .button')
+      let cookiesBannerDelay = 2000
+
+      if (cookiesBanner) {
+        setTimeout(showBanner, cookiesBannerDelay)
+      }
+      
+      cookiesBannerCloseButton.addEventListener('click', cookiesBannerCloseButtonClicked)
+
+      function showBanner () {
+        cookiesBanner.classList.add('show')
+      }
+
+      function cookiesBannerCloseButtonClicked () {
+        cookiesBanner.classList.remove('show')
+      }
     })
+
   </script>
 </body>
 </html>
