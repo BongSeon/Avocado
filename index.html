@@ -92,6 +92,7 @@
     </div>
   </footer>
 
+  <!-- cookies banner -->
   <section class="cookies-banner">
     <div class="constrain">
       <div class="cookies-banner-text">
@@ -106,6 +107,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // init
       let cookiesBanner = document.querySelector('.cookies-banner')
       let cookiesBannerCloseButton = document.querySelector('.cookies-banner-button .button')
       let cookiesBannerDelay = 2000
@@ -114,13 +116,15 @@
         setTimeout(showBanner, cookiesBannerDelay)
       }
       
+      // events
       cookiesBannerCloseButton.addEventListener('click', cookiesBannerCloseButtonClicked)
 
+      // functions
       function showBanner () {
         cookiesBanner.classList.add('show')
       }
-
-      function cookiesBannerCloseButtonClicked () {
+      function cookiesBannerCloseButtonClicked (e) {
+        e.preventDefault()
         cookiesBanner.classList.remove('show')
       }
     })
